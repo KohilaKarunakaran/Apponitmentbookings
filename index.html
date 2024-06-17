@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Food Shop Landing Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="d-md-flex">
+        <div class="left">
+            <nav class="navbar navbar-expand-lg navbar-dark" id="home" style="background-color: rgb(88, 8, 8)">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"><img src="" alt="Logo" id="logoImg"
+                            style="height:200px; width:200px"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation" style="margin-left :45px; font-size:30px">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#home">HOME</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about">ABOUT US</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#ourservices">SERVICES</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact">CONTACT</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <div class="btn-container">
+                                        <div class="border"></div>
+                                        <button class="book">BOOK IN VSHOP</button>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="right">
+            <div class="carousel slide" data-bs-ride="carousel" id="home">
+                <div class="carousel-indicators">
+                    <button aria-label="Slide 1" class="active" data-bs-slide-to="0"
+                        data-bs-target="#carouselExampleIndicators" type="button"></button> <button aria-label="Slide 2"
+                        data-bs-slide-to="1" data-bs-target="#carouselExampleIndicators" type="button"></button> <button
+                        aria-label="Slide 3" data-bs-slide-to="2" data-bs-target="#carouselExampleIndicators"
+                        type="button"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img alt="..." class="d-block w-100" id="slide-Img1" src="">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img alt="..." class="d-block w-100" id="slide-Img2" src="">
+                </div>
+                <div class="carousel-item">
+                    <img alt="..." class="d-block w-100" id="slide-Img3" src="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid align-items-center" id="about">
+        <h1 class="title" id="aboutheading">About us</h1>
+        <div class="about d-lg-flex">
+            <div class="leftImgContainer">
+                <div class="imgContainer">
+                    <img src="" alt="" class="about-img" id="aboutImg">
+                </div>
+            </div>
+            <div class="rightTextContainer">
+                <h3 class="subHead" id="subHead">Weclome to <span id="shopName"></span></h3>
+                <p id="para"></p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container-fluid" id="ourservices">
+        <div class="heading">
+            <h2 id="services" class="title">Our Services</h2>
+        </div>
+        <div class="table1">
+            <table class="table-responsive-xxl">
+                <thead>
+                    <tr>
+                        <th id="col1">SERVICES</th>
+                        <th id="col2">PRICE</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="contact d-lg-flex" id="contact">
+        <div class="leftContainer">
+            <div class="addressContainer">
+                <h3 class="contactHeadings" id="addressHeading">Address</h3>
+                <p class="line1" id="addressLines1"><span id="addressLine1"></span><span id="addressLine2"></span>
+                </p>
+                <p class="line2" id="addressLines2"><span id="pinCode"></span><span id="city"></span></p>
+            </div>
+            <div class="phNumContainer">
+                <h3 class="contactHeadings" id="contactNum">Contact</h3>
+                <i id="callIcon" class="material-icons">call</i>
+                <p id="phoneNumber"></p>
+            </div>
+            <div class="openHrContainer">
+                <h3 class="contactHeadings" id="openHours">Opening Hours</h3>
+                <div id="nostyle">
+                    <table class="table-responsive-md table-borderless" id="openHoursTable">
+                        <tbody>
+                            <tr>
+                                <td>Monday</td>
+                                <td id="mondayOpen"></td>
+                                <td>-</td>
+                                <td id="mondayClose"></td>
+                            </tr>
+                            <tr>
+                                <td>Tuesday</td>
+                                <td id="tuesdayOpen"></td>
+                                <td>-</td>
+                                <td id="tuesdayClose"></td>
+                            </tr>
+                            <tr>
+                                <td>Wednesday</td>
+                                <td id="wednesdayOpen"></td>
+                                <td>-</td>
+                                <td id="wednesdayClose"></td>
+                            </tr>
+                            <tr>
+                                <td>Thursday</td>
+                                <td id="thursdayOpen"></td>
+                                <td>-</td>
+                                <td id="thursdayClose"></td>
+                            </tr>
+                            <tr>
+                                <td>Friday</td>
+                                <td id="fridayOpen"></td>
+                                <td>-</td>
+                                <td id="fridayClose"></td>
+                            </tr>
+                            <tr>
+                                <td>Monday</td>
+                                <td id="saturdayOpen"></td>
+                                <td>-</td>
+                                <td id="saturdayClose"></td>
+                            </tr>
+                            <tr>
+                                <td>Saturday</td>
+                                <td id="sundayOpen"></td>
+                                <td>-</td>
+                                <td id="sundayClose"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="googleMapContainer">
+            <iframe class="map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1979.887577255238!2d24.05927707711804!3d60.24877797507256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x468dbf7a90feb01d%3A0x31e2efe9e67459d!2sLaurinkatu%2034%2C%2008100%20Lohja!5e0!3m2!1sfi!2sfi!4v1710710638829!5m2!1sfi!2sfi"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade" width="600" height="450" style="border:0;"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+    <footer>
+        <div class="d-flex primary align-items-center p-4 justify-content-center" id="footer">
+            Powered by VShop
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js">
+    </script>
+    <script src="script.js"></script>
+
+</html>
